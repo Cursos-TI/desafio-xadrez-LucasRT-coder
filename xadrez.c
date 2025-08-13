@@ -1,32 +1,47 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
+    // variáveis declaradas 
+    int bispo = 5; 
+    int torre = 5; 
+    int rainha = 8; 
+    int i = 1; 
+    int i; 
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // Movimentação do Bispo = Diagonal superior direita
+    printf("Bispo andará..\n"); 
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    for (i = 1; i <= bispo; i++)   // inicia, condição e incremento
+    {
+        printf("Cima\n");
+        printf("Direita\n"); 
+    }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    // Movimentação da Torre = Segue direita 
+    printf("Torre andará..\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    while (i <= torre)    // Condição 
+    {
+        printf("Direita\n");    // Saída
+        i++;                 // incremento para final de curso / sem loops 
+    }
+
+    printf("\n");
+
+    // Movimentação da Rainha = Segue a esquerda
+    printf("Rainha andará..\n"); 
+
+    do {
+        printf("Esquerda\n");     // Saída 
+        i++;                    // Incremento sem loops
+    } while (i <= rainha);    // Condição 
+
+    // Finalização das peças do primeiro jogador
+    printf("Todos os movimentos executados do primeiro jogador!");
 
     return 0;
 }
