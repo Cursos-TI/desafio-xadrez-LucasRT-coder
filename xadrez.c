@@ -41,6 +41,8 @@ int main() {
     } while (i <= rainha);    // Condição 
      i = 1;                 // Inicialização para que siga as 8casas 
 
+    printf("\n");
+
     // Finalização das peças do primeiro jogador
     printf("Todos os movimentos executados do primeiro jogador!");
 
