@@ -7,7 +7,6 @@ int main() {
     int torre = 5; 
     int rainha = 8; 
     int i = 1; 
-    int i; 
 
 
     // Movimentação do Bispo = Diagonal superior direita
@@ -17,18 +16,19 @@ int main() {
     {
         printf("Cima\n");
         printf("Direita\n"); 
-    }
+    } 
 
     printf("\n");
 
     // Movimentação da Torre = Segue direita 
     printf("Torre andará..\n");
-
-    while (i <= torre)    // Condição 
+    i = 1;                  // Inicialização para que siga as 5casas
+    while (i <= torre)           // Condição 
     {
         printf("Direita\n");    // Saída
         i++;                 // incremento para final de curso / sem loops 
     }
+     i = 1;
 
     printf("\n");
 
@@ -39,6 +39,7 @@ int main() {
         printf("Esquerda\n");     // Saída 
         i++;                    // Incremento sem loops
     } while (i <= rainha);    // Condição 
+     i = 1;                 // Inicialização para que siga as 8casas 
 
     // Finalização das peças do primeiro jogador
     printf("Todos os movimentos executados do primeiro jogador!");
