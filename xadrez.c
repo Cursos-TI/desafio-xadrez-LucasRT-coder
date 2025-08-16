@@ -44,7 +44,8 @@ int main() {
 
     printf("\n");
 
-    // Movimentação do CAVALO - LOOP ANINHADOS. 
+    // Movimentação do CAVALO - LOOP ANINHADOS ( FOR & WHILE )
+    printf("Cavalo andará..\n");
 
     while (cavalo--)
     {
