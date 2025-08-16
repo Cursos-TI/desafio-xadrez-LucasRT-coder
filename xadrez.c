@@ -6,6 +6,7 @@ int main() {
     int bispo = 5; 
     int torre = 5; 
     int rainha = 8; 
+    int cavalo = 1; 
     int i = 1; 
 
 
@@ -42,6 +43,17 @@ int main() {
      i = 1;                 // Inicialização para que siga as 8casas 
 
     printf("\n");
+
+    // Movimentação do CAVALO - LOOP ANINHADOS. 
+
+    while (cavalo--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n"); // 1° moviment = 'baixo' duas vezes 
+        } 
+            printf("Esquerda\n"); // 2° moviment = 'esquerda' uma vez
+    }
 
     // Finalização das peças do primeiro jogador
     printf("Todos os movimentos executados do primeiro jogador!");
